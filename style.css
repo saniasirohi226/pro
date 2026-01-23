@@ -13,6 +13,12 @@ html,body {
 
 /* Navbar */
 .navbar {
+    position: fixed;     
+  top: 0;               
+  left: 0;
+  width: 100%;         
+  z-index: 1000;        
+  background-color: #0c0b08;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,23 +32,15 @@ html,body {
 
 nav a,
 .nav-right a {
-  color: #fff;
+  color: #dcca87;       
   text-decoration: none;
   margin: 0 15px;
-  font-size: 17px;
-  
+  transition: color 0.3s ease;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-}
-
-.divider {
-  width: 1px;
-  height: 20px;
-  background: #aaa;
-  margin: 0 10px;
+.navbar nav a:hover,
+.nav-right a:hover {
+  color: #ffffff;       
 }
 
 /* Hero Section */
@@ -94,6 +92,7 @@ nav a,
 .hero-image {
   position: relative;
   width: 450px;
+  margin-top: 2.5vw;
   margin-right: 6vw;
 }
 
