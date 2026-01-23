@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gericht</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">GERÍCHT</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="#registration">Log In / Registration</a>
+        <span class="divider"></span>
+        <a href="#footer">Book Table</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="subtitle">Chase The New Flavour</p>
+        <div id="main-text">
+          <h1>The Key To Fine</h1>
+          <h1>Dining</h1>
+        </div>
+
+        <p class="description">
+          Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+          volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+          aliquam amet tellus
+        </p>
+
+        <button class="btn1">Explore Menu</button>
+      </div>
+
+      <div class="hero-image">
+        <img src="Assets/food.jpg" alt="Food Dish" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="bg-letter">G</div>
+
+      <div id="content-left">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
+          adipiscing ultrices vulputate posuere tristique.adipiscing elit. Quis
+          pharetra ultrices vulputate posuere tristique.
+        </p>
+        <button>Know More</button>
+      </div>
+
+      <div class="knife">
+        <img src="Assets/knife.jpg" alt="knife" />
+      </div>
+
+      <div id="content-right">
+        <h2>Our History</h2>
+        <p>
+          Adipiscing tempus ullamcorper lobortis odio tellus arcu. Volutpat
+          risus placerat morbi.Adipiscing tempus ullamcorper lobortis odio
+          tellus arcu. Volutpat risus placerat morbi.
+        </p>
+        <button>Know More</button>
+      </div>
+    </section>
+
+    <!-- MEnu Section-->
+    <section id="menu" class="special">
+      <h2 id="heading">Menu That Fits Your Palatte</h2>
+      <h1 class="title">Today's Special</h1>
+
+      <div class="menu">
+        <!-- Left -->
+        <div class="menu-col">
+          <h2>Wine & Beer</h2>
+
+          <div class="item">
+            <div>
+              <h3>Chapel Hill Shiraz</h3>
+              <p>AU | Bottle</p>
+            </div>
+            <span>$56</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Catena Malbee</h3>
+              <p>AU | Bottle</p>
+            </div>
+            <span>$59</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>La Vieille Rose</h3>
+              <p>FR | 750 ml</p>
+            </div>
+            <span>$44</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Rhino Pale Ale</h3>
+              <p>CA | 750 ml</p>
+            </div>
+            <span>$31</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Irish Guinness</h3>
+              <p>IE | 750 ml</p>
+            </div>
+            <span>$26</span>
+          </div>
+        </div>
+
+        <!-- Center Image -->
+        <div class="menu-center">
+          <img src="Assets/drink.jpg" alt="cocktail shaker" />
+          <button class="view-btn">View More</button>
+        </div>
+
+        <!-- Right -->
+        <div class="menu-col">
+          <h2>Cocktails</h2>
+
+          <div class="item">
+            <div>
+              <h3>Aperol Spritz</h3>
+              <p>Aperol | Prosecco | Soda</p>
+            </div>
+            <span>$20</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Dark N' Stormy</h3>
+              <p>Dark Rum | Ginger Beer</p>
+            </div>
+            <span>$16</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Daiquiri</h3>
+              <p>Rum | Citrus | Sugar</p>
+            </div>
+            <span>$10</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Old Fashioned</h3>
+              <p>Bourbon | Brown Sugar</p>
+            </div>
+            <span>$31</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Negroni</h3>
+              <p>Gin | Vermouth | Campari</p>
+            </div>
+            <span>$26</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chef section -->
+    <section class="chef">
+      <div class="chef-container">
+        <!-- LEFT IMAGE -->
+        <div class="chef-image">
+          <img src="Assets/chef.jpg" alt="Chef Image" />
+          <div class="leftgold-frame"></div>
+          <div class="rightgold-frame"></div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="chef-content">
+          <p class="sub-title">Chef’s Word</p>
+          <h2>What We Believe In</h2>
+
+          <p class="quote">
+            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor
+            sit. Auctor sit iaculis in arcu. Vulputate nulla lobortis mauris
+            eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam
+            molestie lectus eu. Congue iaculis integer curabitur semper sit
+            nunc. ”
+          </p>
+
+          <div class="chef-name">
+            <h3>Vinnie Luo</h3>
+            <span>Chef & Founder</span>
+          </div>
+
+          <p class="signature">Vinne Luo</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards and Recognition -->
+    <section id="awards" class="laurels">
+      <div class="laurels-container">
+        <!-- LEFT CONTENT -->
+        <div class="laurels-content">
+          <p class="sub-title">Awards & Recognition</p>
+          <h2>Our Laurels</h2>
+
+          <div class="awards">
+            <div class="award">
+              <span class="circle">2</span>
+              <div>
+                <h4>Bib Gourmond</h4>
+                <p>Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
+              </div>
+            </div>
+
+            <div class="award">
+              <span class="circle">1</span>
+              <div>
+                <h4>Rising Star</h4>
+                <p>Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
+              </div>
+            </div>
+
+            <div class="award">
+              <span class="circle">5</span>
+              <div>
+                <h4>AA Hospitality</h4>
+                <p>Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
+              </div>
+            </div>
+
+            <div class="award">
+              <span class="circle">3</span>
+              <div>
+                <h4>Outstanding Chef</h4>
+                <p>Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="laurels-image">
+          <img src="Assets/awardfood.jpg" alt="Food" />
+          <span class="overlay-letter">G</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section id="contact" class="gallery-section">
+      <div class="gallery-text">
+        <div class="subtitle">Instagram</div>
+        <h2>Photo Gallery</h2>
+        <p>
+          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum
+          dolor sit amet couh gjmgm ldmdbn kbkfbl vhvvndnvo incidunt.
+        </p>
+        <button class="view-more">View More</button>
+      </div>
+
+      <div class="gallery-wrapper">
+        <button class="nav-btn left" id="prevBtn">&#8592;</button>
+
+        <div class="gallery" id="gallery">
+          <div class="img-box">
+            <img src="Assets/inst1.jpg" alt="eggs"/>
+            <div class="overlay">📷</div>
+            <span class="scroll-arrow">➜</span>
+          </div>
+          <div class="img-box">
+            <img src="Assets/inst2.jpg" alt="noodles" />
+            <div class="overlay">📷</div>
+          </div>
+          <div class="img-box">
+            <img src="Assets/inst3.jpg" alt="menuitem3" />
+            <div class="overlay">📷</div>
+          </div>
+          <div class="img-box">
+            <img src="Assets/inst4.jpg" alt="menuitem4" />
+            <div class="overlay">📷</div>
+          </div>
+          <div class="img-box">
+            <img src="Assets/inst5.jpg" alt="menuitem5" />
+            <div class="overlay">📷</div>
+          </div>
+        </div>
+
+        <button class="nav-btn right" id="nextBtn">&#8594;</button>
+      </div>
+    </section>
+    <section class="findus">
+      <div class="findus__content">
+        <span class="subtitle">Contact</span>
+        <h2>Find Us</h2>
+
+        <p class="address">
+          Lane Ends Bungalow, Whatcroft Hall Lane Rudheath, CW9 75G
+        </p>
+
+        <h4>Opening Hours</h4>
+        <p>
+          Mon - Fri: 10:00 Am - 02:00 Am<br />
+          Sat - Sun: 10:00 Am - 03:00 Am
+        </p>
+        <p>+1 212-344-1230, +1 212-555-1230</p>
+
+        <button class="btn">Visit Us</button>
+      </div>
+
+      <div class="findus__image">
+        <img src="Assets/contact.jpg" alt="drink" />
+        <div class="leftframe"></div>
+        <div class="rightframe"></div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <footer class="footer">
+      <section id="registration" class="newsletter-section">
+        <div class="newsletter-box">
+          <p class="newsletter-tag">Newsletter</p>
+
+          <h2 class="newsletter-title">Subscribe To Our Newsletter</h2>
+
+          <p class="newsletter-subtitle">And Never Miss Latest Updates!</p>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <!-- Contact section -->
+
+      <footer id="footer" class="footer">
+        <div class="footer-container">
+          <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>9 W 53rd St, New York, NY 10019, USA</p>
+            <p>+1 212-344-1230</p>
+            <p>+1 212-555-1230</p>
+          </div>
+
+          <div class="footer-box center">
+            <h2>GERÍCHT</h2>
+            <p class="quote">
+              "The Best Way To Find Yourself Is To Lose Yourself In The Service
+              Of Others."
+            </p>
+
+            <div class="spoon"></div>
+
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="footer-box">
+            <h3>Working Hours</h3>
+            <p>Monday-Friday:</p>
+            <p>08:00 Am - 12:00 Am</p>
+            <p>Saturday-Sunday:</p>
+            <p>07:00 Am - 11:00 Pm</p>
+          </div>
+        </div>
+
+        <div class="footer-copyright">2025 Gerícht. All Rights Reserved.</div>
+      </footer>
+    </footer>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
