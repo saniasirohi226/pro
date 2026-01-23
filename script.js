@@ -174,6 +174,27 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
         this.reset();
     }
 });
+
+// reservation form
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".reservation-form");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Basic check (HTML required already does most work)
+    alert("Table reserved successfully ✨");
+
+    // Reset form
+    form.reset();
+
+    // Reset custom dropdown text (if using it)
+    const selected = document.querySelector(".select-selected");
+    if (selected) {
+      selected.textContent = "Select guests";
+    }
+  });
+});
 // Newsletter
 document.querySelector(".newsletter-form").addEventListener("submit", (e) => {
   e.preventDefault();

@@ -34,9 +34,8 @@
       </nav>
 
       <div class="nav-right">
-        <a href="#registration">Log In / Registration</a>
-        <span class="divider"></span>
-        <a href="#footer">Book Table</a>
+        <a href="#reservations">Reservation/Book Table</a>
+       
       </div>
     </header>
 
@@ -322,31 +321,56 @@
         <button class="nav-btn right" id="nextBtn">&#8594;</button>
       </div>
     </section>
-    <section class="findus">
-      <div class="findus__content">
-        <span class="subtitle">Contact</span>
-        <h2>Find Us</h2>
 
-        <p class="address">
-          Lane Ends Bungalow, Whatcroft Hall Lane Rudheath, CW9 75G
-        </p>
-
-        <h4>Opening Hours</h4>
-        <p>
-          Mon - Fri: 10:00 Am - 02:00 Am<br />
-          Sat - Sun: 10:00 Am - 03:00 Am
-        </p>
-        <p>+1 212-344-1230, +1 212-555-1230</p>
-
-        <button class="btn">Visit Us</button>
-      </div>
-
-      <div class="findus__image">
-        <img src="Assets/contact.jpg" alt="drink" />
-        <div class="leftframe"></div>
-        <div class="rightframe"></div>
-      </div>
+        <!-- Reservation form -->
+       <section id="reservations" class="reservations">
+        <div class="reservations-container">
+            <h2>Reservations</h2>
+            <p>Because special moments deserve a reserved place.</p>
+            <form class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select...</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6+ Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                  </div>
+                <button type="submit" class="submit-button">Reserve Table</button>
+            </form>
+        </div>
     </section>
+    
 
     <!-- NEWSLETTER -->
     <footer class="footer">
@@ -364,8 +388,9 @@
           </form>
         </div>
       </section>
-      <!-- Contact section -->
 
+      
+      <!-- Footer section -->
       <footer id="footer" class="footer">
         <div class="footer-container">
           <div class="footer-box">
