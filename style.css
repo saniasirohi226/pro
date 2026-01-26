@@ -1772,7 +1772,7 @@ nav a,
 
   /* ---------- NAVBAR ---------- */
   .navbar {
-    padding: 18px 25px;
+    padding: 10px 25px;
   }
 
   nav {
@@ -1852,7 +1852,7 @@ nav a,
   }
 
   .knife img {
-    height: 420px;
+    display: none;
   }
 
   /* ---------- MENU ---------- */
@@ -1865,7 +1865,7 @@ nav a,
   }
 
   .menu-center img {
-    height: 380px;
+    display: none;
   }
 
   .title {
