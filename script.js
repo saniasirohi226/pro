@@ -160,40 +160,80 @@ const frame = document.querySelector(".frame");
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
-  frame.style.transform = `translate(${scrollY * 0.03}px, ${
-    scrollY * 0.03
-  }px)`;
+  frame.style.transform = `translate(${scrollY * 0.03}px, ${scrollY * 0.03
+    }px)`;
 });
 
-document.getElementById('newsletter-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = this.querySelector('input').value;
-    
-    if(email) {
-        alert(`Thank you for subscribing with: ${email}`);
-        this.reset();
-    }
+document.getElementById('newsletter-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const email = this.querySelector('input').value;
+
+  if (email) {
+    alert(`Thank you for subscribing with: ${email}`);
+    this.reset();
+  }
 });
 
 // reservation form
+// Google Forms Configuration
+// TODO: Replace these values with your actual Google Form details
+// Example URL: https://docs.google.com/forms/d/e/1FAIpQLSe.../formResponse
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc1cvvxdUaiKPB_Sp-Tcjc_W3PyyqNb9fn_eukSNaoxwSFfLg/formResponse";
+const GOOGLE_FORM_ENTRIES = {
+  name: "entry.2028265421",
+  phone: "entry.1331205731",
+  email: "entry.1897862877",
+  guests: "entry.538009850",
+  date: "entry.353436812",
+  time: "entry.613121978"
+};
+
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector(".reservation-form");
+  const form = document.getElementById("reservation-form");
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-    // Basic check (HTML required already does most work)
-    alert("Table reserved successfully ✨");
+      if (GOOGLE_FORM_URL === "YOUR_GOOGLE_FORM_ACTION_URL") {
+        alert("Please configure the Google Form URL and Entry IDs in script.js to enable reservations.");
+        return;
+      }
 
-    // Reset form
-    form.reset();
+      const formData = new FormData(form);
+      const googleFormData = new FormData();
 
-    // Reset custom dropdown text (if using it)
-    const selected = document.querySelector(".select-selected");
-    if (selected) {
-      selected.textContent = "Select guests";
-    }
-  });
+      // Map form fields to Google Form entries
+      for (const [key, googleEntryId] of Object.entries(GOOGLE_FORM_ENTRIES)) {
+        const value = formData.get(key);
+        if (value) {
+          googleFormData.append(googleEntryId, value);
+        }
+      }
+
+      try {
+        await fetch(GOOGLE_FORM_URL, {
+          method: "POST",
+          mode: "no-cors",
+          body: googleFormData
+        });
+
+        // Success feedback
+        alert("Table reserved successfully ✨");
+        form.reset();
+
+        // Reset custom dropdown text if applicable
+        const selected = document.querySelector(".select-selected");
+        if (selected) {
+          selected.textContent = "Select guests";
+        }
+
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("There was a problem submitting your reservation. Please try again.");
+      }
+    });
+  }
 });
 // Newsletter
 document.querySelector(".newsletter-form").addEventListener("submit", (e) => {
@@ -201,13 +241,13 @@ document.querySelector(".newsletter-form").addEventListener("submit", (e) => {
   alert("Subscribed successfully!");
 });
 
-  function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
-  }
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
 
- const links = document.querySelectorAll('.nav-links a');
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.remove('active');
-    });
+const links = document.querySelectorAll('.nav-links a');
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('active');
   });
+});
