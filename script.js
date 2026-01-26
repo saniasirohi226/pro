@@ -200,3 +200,14 @@ document.querySelector(".newsletter-form").addEventListener("submit", (e) => {
   e.preventDefault();
   alert("Subscribed successfully!");
 });
+
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+
+ const links = document.querySelectorAll('.nav-links a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('active');
+    });
+  });
